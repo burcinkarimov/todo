@@ -7,6 +7,8 @@ const toDoCategory = document.querySelector(".todo_category");
 const weekDays = document.querySelectorAll("li"); 
 const form = document.querySelector("form");
 
+let todos;
+
 window.addEventListener('load', () => {
   todos = JSON.parse(localStorage.getItem('todos')) || [];
   
