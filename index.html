@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>To Do</title>
+</head>
+<body>
+  <header>
+    <h1 class="header_title">To Do</h1>
+    <h3 class="header_date"></h3>
+    <ul class="week_view">
+      <li value="1">Mon</li>
+      <li value="2">Tue</li>
+      <li value="3">Wed</li>
+      <li value="4">Thur</li>
+      <li value="5">Fri</li>
+      <li value="6">Sat</li>
+      <li value="0">Sun</li>
+    </ul>
+  </header>
+  
+  <form>
+    <input type="text" class="todo_input" placeholder="What do you need to do today?">
+    <select name="category" class="todo_category">
+      <option value="select" selected>Select a category...</option>
+      <option value="Housework">Housework</option>
+      <option value="Personal">Personal</option>
+      <option value="Work">Work</option>
+      <option value="Relationships">Relationships</option>
+    </select>
+    <button type="submit" class="todo_button">+</button>
+  </form>
+  
+  <div class="todo_container">
+    <ul class="todo_list">
+    </ul>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
